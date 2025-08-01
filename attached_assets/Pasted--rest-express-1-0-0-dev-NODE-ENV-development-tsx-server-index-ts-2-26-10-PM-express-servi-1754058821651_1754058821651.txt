@@ -1,0 +1,85 @@
+
+> rest-express@1.0.0 dev
+> NODE_ENV=development tsx server/index.ts
+
+2:26:10 PM [express] serving on port 5000
+2:26:21 PM [express] GET /api/auth/user 304 in 9ms :: {"id":"pqk73ba3v3rmdsbu118","email":"admin@leg…
+2:26:21 PM [express] GET /api/auth/user 304 in 2ms :: {"id":"pqk73ba3v3rmdsbu118","email":"admin@leg…
+2:26:21 PM [express] GET /api/auth/user 304 in 2ms :: {"id":"pqk73ba3v3rmdsbu118","email":"admin@leg…
+2:26:22 PM [express] GET /api/auth/user 304 in 2ms :: {"id":"pqk73ba3v3rmdsbu118","email":"admin@leg…
+2:26:22 PM [express] GET /api/clients 401 in 1ms :: {"message":"Token não fornecido"}
+2:26:22 PM [express] GET /api/dashboard/revenue 304 in 2ms :: [{"month":"Jan","revenue":0},{"month":…
+2:26:22 PM [express] GET /api/dashboard/revenue 304 in 1ms :: [{"month":"Jan","revenue":0},{"month":…
+2:26:31 PM [express] GET /api/auth/user 304 in 2ms :: {"id":"pqk73ba3v3rmdsbu118","email":"admin@leg…
+2:26:42 PM [express] GET /api/auth/user 304 in 2ms :: {"id":"pqk73ba3v3rmdsbu118","email":"admin@leg…
+2:26:45 PM [express] GET /api/auth/user 200 in 3ms :: {"id":"pqk73ba3v3rmdsbu118","email":"admin@leg…
+2:26:47 PM [express] GET /api/dashboard/revenue 304 in 2ms :: [{"month":"Jan","revenue":0},{"month":…
+2:26:49 PM [express] GET /api/clients 401 in 1ms :: {"message":"Token não fornecido"}
+2:26:53 PM [express] GET /api/auth/user 304 in 2ms :: {"id":"pqk73ba3v3rmdsbu118","email":"admin@leg…
+2:28:33 PM [express] GET /api/auth/user 304 in 2ms :: {"id":"pqk73ba3v3rmdsbu118","email":"admin@leg…
+2:28:34 PM [express] GET /api/clients 401 in 1ms :: {"message":"Token não fornecido"}
+2:28:40 PM [express] GET /api/auth/user 304 in 2ms :: {"id":"pqk73ba3v3rmdsbu118","email":"admin@leg…
+2:28:49 PM [express] GET /api/auth/user 304 in 2ms :: {"id":"pqk73ba3v3rmdsbu118","email":"admin@leg…
+2:29:56 PM [express] GET /api/auth/user 304 in 2ms :: {"id":"pqk73ba3v3rmdsbu118","email":"admin@leg…
+2:29:57 PM [express] GET /api/dashboard/revenue 304 in 1ms :: [{"month":"Jan","revenue":0},{"month":…
+2:31:56 PM [vite] hmr update /src/App.tsx?v=ZVAKyrSAF3EIsi1ufEZGJ, /src/index.css?v=ZVAKyrSAF3EIsi1ufEZGJ
+2:31:57 PM [vite] hmr update /src/pages/contracts.tsx, /src/index.css?v=ZVAKyrSAF3EIsi1ufEZGJ
+2:31:57 PM [vite] hmr update /src/pages/clients.tsx, /src/index.css?v=ZVAKyrSAF3EIsi1ufEZGJ
+2:31:59 PM [vite] hmr update /src/pages/suppliers.tsx, /src/index.css?v=ZVAKyrSAF3EIsi1ufEZGJ
+2:31:59 PM [vite] hmr update /src/pages/employees.tsx, /src/index.css?v=ZVAKyrSAF3EIsi1ufEZGJ
+2:31:59 PM [vite] hmr update /src/pages/financial.tsx, /src/index.css?v=ZVAKyrSAF3EIsi1ufEZGJ
+2:31:59 PM [vite] hmr update /src/pages/projects.tsx, /src/index.css?v=ZVAKyrSAF3EIsi1ufEZGJ
+2:31:59 PM [vite] hmr update /src/pages/create-contract.tsx, /src/index.css?v=ZVAKyrSAF3EIsi1ufEZGJ
+2:32:00 PM [vite] hmr update /src/pages/create-client.tsx, /src/index.css?v=ZVAKyrSAF3EIsi1ufEZGJ
+2:32:00 PM [vite] hmr update /src/pages/create-supplier.tsx, /src/index.css?v=ZVAKyrSAF3EIsi1ufEZGJ
+2:32:00 PM [vite] hmr update /src/pages/create-employee.tsx, /src/index.css?v=ZVAKyrSAF3EIsi1ufEZGJ
+2:32:00 PM [vite] hmr update /src/pages/create-transaction.tsx, /src/index.css?v=ZVAKyrSAF3EIsi1ufEZGJ
+2:32:01 PM [vite] hmr update /src/pages/create-project.tsx, /src/index.css?v=ZVAKyrSAF3EIsi1ufEZGJ
+2:32:01 PM [express] GET /api/clients 401 in 1ms :: {"message":"Token não fornecido"}
+2:32:01 PM [vite] hmr update /src/index.css?v=ZVAKyrSAF3EIsi1ufEZGJ
+2:32:04 PM [vite] Internal server error: /home/runner/workspace/client/src/pages/create-project.tsx: Missing semicolon. (1:3)
+
+> 1 | The code modifies the CreateProject component to use window.history.back() for navigation, improving the user experience by allowing them to easily return to the previous page.
+    |    ^
+  2 | ```
+  3 | 
+  4 | ```replit_final_file
+  Plugin: vite:react-babel
+  File: /home/runner/workspace/client/src/pages/create-project.tsx:1:3
+  1  |  The code modifies the CreateProject component to use window.history.back() for navigation, improving the user experience by allowing them to easily return to the previous page.
+     |     ^
+  2  |  ```
+  3  |  
+      at toParseError (/home/runner/workspace/node_modules/@babel/parser/src/parse-error.ts:95:45)
+      at raise (/home/runner/workspace/node_modules/@babel/parser/src/tokenizer/index.ts:1503:19)
+      at semicolon (/home/runner/workspace/node_modules/@babel/parser/src/parser/util.ts:149:10)
+      at parseExpressionStatement (/home/runner/workspace/node_modules/@babel/parser/src/parser/statement.ts:1358:10)
+      at parseExpressionStatement (/home/runner/workspace/node_modules/@babel/parser/src/plugins/typescript/index.ts:3338:28)
+      at parseStatementContent (/home/runner/workspace/node_modules/@babel/parser/src/parser/statement.ts:697:19)
+      at parseStatementContent (/home/runner/workspace/node_modules/@babel/parser/src/plugins/typescript/index.ts:3183:20)
+      at parseStatementLike (/home/runner/workspace/node_modules/@babel/parser/src/parser/statement.ts:477:17)
+      at parseModuleItem (/home/runner/workspace/node_modules/@babel/parser/src/parser/statement.ts:414:17)
+      at parseBlockOrModuleBlockBody (/home/runner/workspace/node_modules/@babel/parser/src/parser/statement.ts:1438:16)
+      at parseBlockBody (/home/runner/workspace/node_modules/@babel/parser/src/parser/statement.ts:1412:10)
+      at parseProgram (/home/runner/workspace/node_modules/@babel/parser/src/parser/statement.ts:229:10)
+      at parseTopLevel (/home/runner/workspace/node_modules/@babel/parser/src/parser/statement.ts:203:25)
+      at parse (/home/runner/workspace/node_modules/@babel/parser/src/parser/index.ts:93:10)
+      at parse (/home/runner/workspace/node_modules/@babel/parser/src/plugins/typescript/index.ts:4307:20)
+      at parse (/home/runner/workspace/node_modules/@babel/parser/src/index.ts:92:38)
+      at parser (/home/runner/workspace/node_modules/@babel/core/src/parser/index.ts:28:19)
+      at parser.next (<anonymous>)
+      at normalizeFile (/home/runner/workspace/node_modules/@babel/core/src/transformation/normalize-file.ts:49:24)
+      at normalizeFile.next (<anonymous>)
+      at run (/home/runner/workspace/node_modules/@babel/core/src/transformation/index.ts:40:36)
+      at run.next (<anonymous>)
+      at transform (/home/runner/workspace/node_modules/@babel/core/src/transform.ts:29:20)
+      at transform.next (<anonymous>)
+      at step (/home/runner/workspace/node_modules/gensync/index.js:261:32)
+      at /home/runner/workspace/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/home/runner/workspace/node_modules/gensync/index.js:223:11)
+      at /home/runner/workspace/node_modules/gensync/index.js:189:28
+      at <anonymous> (/home/runner/workspace/node_modules/@babel/core/src/gensync-utils/async.ts:90:7)
+      at /home/runner/workspace/node_modules/gensync/index.js:113:33
+      at step (/home/runner/workspace/node_modules/gensync/index.js:287:14)
+      at /home/runner/workspace/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/home/runner/workspace/node_modules/gensync/index.js:223:11)
